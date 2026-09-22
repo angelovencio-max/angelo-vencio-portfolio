@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect width="128" height="128" rx="28" fill="#E6F9FC"/>
+  <rect x="5" y="5" width="118" height="118" rx="23" stroke="#08C4D4" stroke-width="4" stroke-opacity="0.6"/>
+  <!-- Perfectly Centered AV Monogram (Width 84px, Height 48px, Margins 22px X / 40px Y) -->
+  <path d="M22 88L41 40H51L70 88H58L54 75H38L34 88H22ZM42 63H50L46 50L42 63Z" fill="#08C4D4"/>
+  <path d="M68 40H80L87 75L94 40H106L93 88H81L68 40Z" fill="#08C4D4"/>
+</svg>

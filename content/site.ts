@@ -55,7 +55,7 @@ export const siteConfig = {
     headline: "BRANDS & BUSINESSES I WORKED WITH",
   },
   brandLogos: [
-    { name: "GSD Venture Studios", category: "Building Global Ventures", logo: "" },
+    { name: "GSD Venture Studios", category: "Building Global Ventures", logo: "/images/1630613294854.jpeg" },
     { name: "Prime Consulting", category: "Sales & Growth Program", logo: "" },
     { name: "Gencys Group", category: "Growth & Performance Agency", logo: "" },
     { name: "Mata Technologies", category: "Video & Technology Company", logo: "" },

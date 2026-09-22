@@ -37,9 +37,10 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['var(--font-playfair)', 'Georgia', 'serif'],
-        sans: ['var(--font-jakarta)', 'Plus Jakarta Sans', 'Inter', 'sans-serif'],
-        mono: ['var(--font-mono)', 'JetBrains Mono', 'monospace'],
+        poppins: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
+        mono: ['Poppins', 'sans-serif'],
+        serif: ['Poppins', 'serif'],
       },
     },
   },

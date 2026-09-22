@@ -55,7 +55,7 @@ export const siteConfig = {
     headline: "BRANDS & BUSINESSES I WORKED WITH",
   },
   brandLogos: [
-    { name: "Self Care Club", category: "eCommerce / DTC Brand", logo: "" },
+    { name: "GSD Venture Studios", category: "Building Global Ventures", logo: "" },
     { name: "Prime Consulting", category: "Sales & Growth Program", logo: "" },
     { name: "Gencys Group", category: "Growth & Performance Agency", logo: "" },
     { name: "Mata Technologies", category: "Video & Technology Company", logo: "" },

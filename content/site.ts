@@ -111,7 +111,7 @@ export const aboutContent = {
   p1: "Angelo Vencio works at the intersection of creative strategy, eCommerce, AI, marketing, and sales.",
   p2: "His work has evolved from producing content and video into building the systems behind creative production, testing, marketing, and growth.",
   clientValue: "You don't just get another pair of hands. You get someone who can look at the creative, the system behind it, and the business problem they're meant to solve.",
-  image: "/images/IMG_4329_20260516_173628_3600.JPEG",
+  image: "/images/20260516_173641_290_IMG_4328_20260516_173527_3600 2",
 };
 
 export const capabilities: Capability[] = [

@@ -56,8 +56,8 @@ export const siteConfig = {
   },
   brandLogos: [
     { name: "GSD Venture Studios", category: "Venture Capital and Private Equity Principals in Florida", logo: "/images/1630613294854.jpeg" },
-    { name: "Next Level Consulting", category: "Consulting and Services in San Francisco", logo: "/images/1630584715593.jpeg" },
-    { name: "Gencys Group", category: "Growth & Performance Agency", logo: "" },
+    { name: "Next Level Consulting", category: "Consulting and Services in San Francisco, CA.", logo: "/images/1630584715593.jpeg" },
+    { name: "Gencys Group", category: "Philippine-based holding company, e-commerce enabler, and business acceleration ecosystem", logo: "/images/Gencys.jpg" },
     { name: "Mata Technologies", category: "Video & Technology Company", logo: "" },
   ] as BrandLogo[],
   theResult: {

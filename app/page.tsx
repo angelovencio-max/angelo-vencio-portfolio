@@ -110,7 +110,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 flex justify-center lg:justify-end">
               <div className="relative w-full max-w-[440px] aspect-[4/5] sm:aspect-[3/4] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
-                  src="/images/angelo-portrait.jpg"
+                  src={aboutContent.image}
                   alt="Angelo Vencio"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -592,7 +592,7 @@ export default function HomePage() {
             <div className="lg:col-span-5 flex justify-center">
               <div className="relative w-full max-w-[340px] aspect-square rounded-3xl bg-gray-100 overflow-hidden border-4 border-white shadow-lg">
                 <img
-                  src="/images/angelo-portrait.jpg"
+                  src={aboutContent.image}
                   alt="Angelo Vencio"
                   className="w-full h-full object-cover"
                 />

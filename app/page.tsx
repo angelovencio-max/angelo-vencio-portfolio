@@ -308,10 +308,10 @@ export default function HomePage() {
           <div className="space-y-8">
             <div className="text-center space-y-2">
               <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
-                BRAND PARTNERSHIPS
+                {siteConfig.brandsSection.eyebrow}
               </div>
               <h3 className="font-sans text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#071A2B] tracking-tight uppercase">
-                BRANDS &amp; PROJECTS ANGELO HAS WORKED WITH
+                {siteConfig.brandsSection.headline}
               </h3>
             </div>
 
@@ -321,6 +321,13 @@ export default function HomePage() {
                   key={index}
                   className="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col items-center justify-center text-center space-y-2 hover:border-[#08C4D4] transition-colors"
                 >
+                  {brand.logo ? (
+                    <img
+                      src={brand.logo}
+                      alt={brand.name}
+                      className="max-h-8 w-auto object-contain mb-1"
+                    />
+                  ) : null}
                   <div className="font-mono text-xs sm:text-sm font-bold text-[#071A2B] uppercase tracking-wider">
                     {brand.name}
                   </div>

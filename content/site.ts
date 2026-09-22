@@ -1,6 +1,7 @@
 export interface BrandLogo {
   name: string;
   category: string;
+  logo?: string;
 }
 
 export interface OutcomePillar {
@@ -49,11 +50,15 @@ export const siteConfig = {
     headline: "STRATEGY. SYSTEMS. EXECUTION. ALL IN ONE PARTNER.",
     copy: "I work with eCommerce founders and growth-minded teams to build the systems, processes, and creative strategies that turn ideas into consistent results.",
   },
+  brandsSection: {
+    eyebrow: "BRAND PARTNERSHIPS",
+    headline: "BRANDS & BUSINESSES I WORKED WITH",
+  },
   brandLogos: [
-    { name: "Self Care Club", category: "eCommerce / DTC Brand" },
-    { name: "Prime Consulting", category: "Sales & Growth Program" },
-    { name: "Gencys Group", category: "Growth & Performance Agency" },
-    { name: "Mata Technologies", category: "Video & Technology Company" },
+    { name: "Self Care Club", category: "eCommerce / DTC Brand", logo: "" },
+    { name: "Prime Consulting", category: "Sales & Growth Program", logo: "" },
+    { name: "Gencys Group", category: "Growth & Performance Agency", logo: "" },
+    { name: "Mata Technologies", category: "Video & Technology Company", logo: "" },
   ] as BrandLogo[],
   theResult: {
     eyebrow: "THE RESULT",

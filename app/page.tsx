@@ -319,30 +319,32 @@ export default function HomePage() {
               {siteConfig.brandLogos.map((brand, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl border border-gray-200 p-5 flex flex-col items-center justify-center text-center space-y-2 hover:border-[#08C4D4] transition-colors"
+                  className="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 hover:border-[#08C4D4] transition-all min-h-[150px]"
                 >
                   {brand.logo ? (
-                    <img
-                      src={brand.logo}
-                      alt={brand.name}
-                      className="max-h-8 w-auto object-contain mb-1"
-                    />
+                    <div className="h-12 w-full flex items-center justify-center shrink-0 mb-1">
+                      <img
+                        src={brand.logo}
+                        alt={brand.name}
+                        className="max-h-12 max-w-[85%] object-contain"
+                      />
+                    </div>
                   ) : null}
-                  <div className="font-mono text-xs sm:text-sm font-bold text-[#071A2B] uppercase tracking-wider">
+                  <div className="font-mono text-xs sm:text-sm font-bold text-[#071A2B] uppercase tracking-wider leading-snug">
                     {brand.name}
                   </div>
-                  <div className="text-[10px] sm:text-xs text-gray-400 font-sans">
+                  <div className="text-[10px] sm:text-xs text-gray-400 font-sans font-medium">
                     {brand.category}
                   </div>
                 </div>
               ))}
 
               {/* Additional Slot */}
-              <div className="bg-white rounded-2xl border border-dashed border-gray-300 p-5 flex flex-col items-center justify-center text-center space-y-2">
-                <div className="font-mono text-xs sm:text-sm font-bold text-[#08C4D4] uppercase tracking-wider">
+              <div className="bg-white rounded-2xl border border-dashed border-gray-300 p-5 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 min-h-[150px]">
+                <div className="font-mono text-xs sm:text-sm font-bold text-[#08C4D4] uppercase tracking-wider leading-snug">
                   YOUR BRAND HERE
                 </div>
-                <div className="text-[10px] sm:text-xs text-gray-400 font-sans">
+                <div className="text-[10px] sm:text-xs text-gray-400 font-sans font-medium">
                   Growth &amp; Creative System
                 </div>
                 <button

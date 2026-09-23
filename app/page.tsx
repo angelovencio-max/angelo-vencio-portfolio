@@ -108,27 +108,14 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: Whole Large Photo Container (6 cols) */}
+            {/* Right Column: Widescreen Media Container (6 cols) */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[440px] aspect-[4/5] sm:aspect-[3/4] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+              <div className="relative w-full max-w-[580px] aspect-video sm:aspect-[16/10] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
                   src={aboutContent.image}
-                  alt="Angelo Vencio"
+                  alt="Featured Showcase"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                
-                {/* Subtle Overlay Label */}
-                <div className="absolute inset-x-4 bottom-4 bg-[#071A2B]/85 backdrop-blur-md rounded-2xl p-4 border border-white/10 text-white flex items-center justify-between">
-                  <div>
-                    <div className="font-sans text-sm font-extrabold text-white">
-                      Angelo Vencio
-                    </div>
-                    <div className="font-mono text-[10px] text-[#08C4D4] font-bold uppercase tracking-wider">
-                      AI Creative Strategist &amp; eCommerce Operator
-                    </div>
-                  </div>
-                  <Sparkles className="w-5 h-5 text-[#08C4D4] shrink-0" />
-                </div>
               </div>
             </div>
 

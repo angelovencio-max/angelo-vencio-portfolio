@@ -119,6 +119,7 @@ export const siteConfig = {
   contact: {
     email: "angelo@angelovencio.com",
     linkedin: "https://linkedin.com/in/angelovencio",
+    calendarUrl: "https://tidycal.com/avisuals/30min",
   },
 };
 

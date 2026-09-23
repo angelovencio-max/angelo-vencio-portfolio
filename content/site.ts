@@ -31,6 +31,7 @@ export interface HeroConfig {
   googleCertId?: string;
   primaryCta: string;
   secondaryCta: string;
+  image?: string;
 }
 
 export const siteConfig = {
@@ -46,6 +47,7 @@ export const siteConfig = {
     googleCert: "Google Certified for Digital Marketing",
     primaryCta: "FREE 15-minute Discovery Call →",
     secondaryCta: "See How It Works →",
+    image: "/images/hero-portrait.png",
   } as HeroConfig,
   advantageStrip: {
     headline: "MORE THAN SERVICES. A SYSTEM FOR SUSTAINABLE GROWTH.",
@@ -128,7 +130,7 @@ export const aboutContent = {
   p1: "Angelo Vencio works at the intersection of creative strategy, eCommerce, AI, marketing, and sales.",
   p2: "His work has evolved from producing content and video into building the systems behind creative production, testing, marketing, and growth.",
   clientValue: "You don't just get another pair of hands. You get someone who can look at the creative, the system behind it, and the business problem they're meant to solve.",
-  image: "/images/hero-portrait.png",
+  image: "/images/angelo-portrait.jpg",
 };
 
 export const capabilities: Capability[] = [

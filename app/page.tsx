@@ -108,11 +108,11 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: Widescreen Media Container (6 cols) */}
-            <div className="lg:col-span-6 flex justify-center lg:justify-end">
-              <div className="relative w-full max-w-[580px] aspect-video sm:aspect-[16/10] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+            {/* Right Column: Large Widescreen Media Container (6 cols) */}
+            <div className="lg:col-span-6 flex justify-center lg:justify-end w-full">
+              <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[480px] xl:h-[520px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
-                  src={aboutContent.image}
+                  src={siteConfig.hero.image || "/images/hero-portrait.png"}
                   alt="Featured Showcase"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

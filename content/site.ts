@@ -34,7 +34,7 @@ export const siteConfig = {
     googleCert: "Google Certified for Digital Marketing",
     googleCertId: "Credential ID: 6Q9-XZL-B2S",
     
-    primaryCta: "FREE 15-30 minutes Discovery Call here →",
+    primaryCta: "FREE 15-minute Discovery Call →",
     secondaryCta: "See How It Works →",
   },
   advantageStrip: {

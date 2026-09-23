@@ -25,6 +25,7 @@ export interface Capability {
 export interface HeroConfig {
   eyebrow: string;
   hookHeadline: string;
+  hookHeadlineAccent?: string;
   supportingCopy: string;
   googleCert: string;
   googleCertId?: string;
@@ -39,7 +40,8 @@ export const siteConfig = {
   url: "https://angelovencio.com",
   hero: {
     eyebrow: "AI CREATIVE STRATEGIST / E-COMMERCE OPERATOR",
-    hookHeadline: "Creating More Ads, But Not More Sales?",
+    hookHeadline: "Creating More Ads,",
+    hookHeadlineAccent: "But Not More Sales?",
     supportingCopy: "Tired of guessing what's working?",
     googleCert: "Google Certified for Digital Marketing",
     primaryCta: "FREE 15-minute Discovery Call →",

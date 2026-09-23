@@ -64,7 +64,8 @@ export default function HomePage() {
               {/* 2-Liner Hook */}
               <div className="space-y-4">
                 <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-black text-[#071A2B] tracking-tight leading-[1.08]">
-                  {siteConfig.hero.hookHeadline}
+                  {siteConfig.hero.hookHeadline} <br />
+                  <span className="text-[#08C4D4]">{siteConfig.hero.hookHeadlineAccent || "But Not More Sales?"}</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-600 font-sans max-w-xl leading-relaxed font-medium">

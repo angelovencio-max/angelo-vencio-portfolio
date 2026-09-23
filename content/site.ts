@@ -30,10 +30,9 @@ export const siteConfig = {
   hero: {
     eyebrow: "AI CREATIVE STRATEGIST / E-COMMERCE OPERATOR",
     hookHeadline: "Creating More Ads, But Not More Sales?",
-    supportingCopy: "I help ecommerce founders build creative systems so they can launch, test, and find winning ads faster.",
+    supportingCopy: "Tired of guessing what's working?",
     googleCert: "Google Certified for Digital Marketing",
-    googleCertId: "Credential ID: 6Q9-XZL-B2S",
-    primaryCta: "Book a Consultation →",
+    primaryCta: "FREE 15-30 minutes Discovery Call here →",
     secondaryCta: "See How It Works →",
   },
   advantageStrip: {

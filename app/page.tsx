@@ -83,7 +83,9 @@ export default function HomePage() {
                 </svg>
                 <div className="text-xs">
                   <span className="font-bold text-[#071A2B]">{siteConfig.hero.googleCert}</span>
-                  <span className="text-gray-400 font-mono text-[11px] ml-2">| {siteConfig.hero.googleCertId}</span>
+                  {siteConfig.hero.googleCertId ? (
+                    <span className="text-gray-400 font-mono text-[11px] ml-2">| {siteConfig.hero.googleCertId}</span>
+                  ) : null}
                 </div>
               </div>
 

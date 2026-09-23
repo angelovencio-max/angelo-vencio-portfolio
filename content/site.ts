@@ -32,6 +32,7 @@ export const siteConfig = {
     hookHeadline: "Creating More Ads, But Not More Sales?",
     supportingCopy: "Tired of guessing what's working?",
     googleCert: "Google Certified for Digital Marketing",
+    
     primaryCta: "FREE 15-30 minutes Discovery Call here →",
     secondaryCta: "See How It Works →",
   },

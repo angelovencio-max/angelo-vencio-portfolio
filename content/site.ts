@@ -22,6 +22,16 @@ export interface Capability {
   description: string;
 }
 
+export interface HeroConfig {
+  eyebrow: string;
+  hookHeadline: string;
+  supportingCopy: string;
+  googleCert: string;
+  googleCertId?: string;
+  primaryCta: string;
+  secondaryCta: string;
+}
+
 export const siteConfig = {
   name: "Angelo Vencio",
   title: "Angelo Vencio — AI Creative Strategist & eCommerce Operator",
@@ -32,11 +42,9 @@ export const siteConfig = {
     hookHeadline: "Creating More Ads, But Not More Sales?",
     supportingCopy: "Tired of guessing what's working?",
     googleCert: "Google Certified for Digital Marketing",
-    googleCertId: "Credential ID: 6Q9-XZL-B2S",
-    
     primaryCta: "FREE 15-minute Discovery Call →",
     secondaryCta: "See How It Works →",
-  },
+  } as HeroConfig,
   advantageStrip: {
     headline: "MORE THAN SERVICES. A SYSTEM FOR SUSTAINABLE GROWTH.",
     pillars: [

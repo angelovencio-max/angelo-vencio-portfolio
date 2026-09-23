@@ -64,12 +64,11 @@ export default function HomePage() {
               {/* 2-Liner Hook */}
               <div className="space-y-4">
                 <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-black text-[#071A2B] tracking-tight leading-[1.08]">
-                  Creating More Ads, <br />
-                  <span className="text-[#08C4D4]">But Not More Sales?</span>
+                  {siteConfig.hero.hookHeadline}
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-600 font-sans max-w-xl leading-relaxed font-medium">
-                  I help ecommerce founders build creative systems so they can launch, test, and find winning ads faster.
+                  {siteConfig.hero.supportingCopy}
                 </p>
               </div>
 

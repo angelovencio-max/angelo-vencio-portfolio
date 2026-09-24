@@ -588,11 +588,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[340px] aspect-square rounded-3xl bg-gray-100 overflow-hidden border-4 border-white shadow-lg">
+              <div className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-3xl bg-gray-100 overflow-hidden border-4 border-white shadow-lg">
                 <img
                   src={aboutContent.image}
                   alt="Angelo Vencio"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>

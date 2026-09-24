@@ -47,7 +47,7 @@ export const siteConfig = {
     googleCert: "Google Certified for Digital Marketing",
     primaryCta: "FREE 15-minute Discovery Call →",
     secondaryCta: "See How It Works →",
-    image: "/images/hero-portrait.png",
+    image: "/images/Hero Photo.JPG",
   } as HeroConfig,
   advantageStrip: {
     headline: "MORE THAN SERVICES. A SYSTEM FOR SUSTAINABLE GROWTH.",

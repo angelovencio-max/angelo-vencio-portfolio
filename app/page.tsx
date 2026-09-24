@@ -108,9 +108,9 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: Large Widescreen Media Container (6 cols) */}
+            {/* Right Column: True Widescreen Landscape Media Container (6 cols) */}
             <div className="lg:col-span-6 flex justify-center lg:justify-end w-full">
-              <div className="relative w-full h-[320px] sm:h-[420px] lg:h-[480px] xl:h-[520px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+              <div className="relative w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
                   src={siteConfig.hero.image || "/images/hero-portrait.png"}
                   alt="Featured Showcase"

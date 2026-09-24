@@ -147,7 +147,6 @@ export const caseStudies: CaseStudy[] = [
     focusType: "results-projects",
     description: "Scaled creative execution for growth projects and trainer for Ecommerce Partners.",
     image: "/images/GENCYS.jpeg",
-    isPlaceholderImage: true,
     challenge: "Scaling ad spend across multiple DTC accounts without increasing CPA or burning through creative assets.",
     objective: "Engineered scalable ad testing frameworks to systematically isolate high-performing campaign angles.",
     strategy: "Implemented rapid creative iteration matrices paired with performance data tracking.",

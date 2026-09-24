@@ -56,16 +56,16 @@ export default function HomePage() {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
             
-            {/* Left Column (5 cols) */}
-            <div className="lg:col-span-5 space-y-6">
+            {/* Left Column (6 cols) */}
+            <div className="lg:col-span-6 space-y-6">
               
               {/* 2-Liner Hook */}
               <div className="space-y-4">
-                <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-black text-[#071A2B] tracking-tight leading-[1.08]">
-                  {siteConfig.hero.hookHeadline} <br />
-                  <span className="text-[#08C4D4]">{siteConfig.hero.hookHeadlineAccent || "But Not More Sales?"}</span>
+                <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.4rem] font-black text-[#071A2B] tracking-tight leading-[1.1]">
+                  <span className="block whitespace-nowrap">{siteConfig.hero.hookHeadline}</span>
+                  <span className="text-[#08C4D4] block whitespace-nowrap">{siteConfig.hero.hookHeadlineAccent || "But Not More Sales?"}</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-600 font-sans max-w-xl leading-relaxed font-medium">
@@ -108,9 +108,9 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: Expanded Large Widescreen Media Container (7 cols) */}
-            <div className="lg:col-span-7 flex justify-center lg:justify-end w-full">
-              <div className="relative w-full aspect-[16/10] min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] xl:min-h-[520px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+            {/* Right Column: Large Widescreen Media Container (6 cols shifted right) */}
+            <div className="lg:col-span-6 flex justify-center lg:justify-end w-full lg:pl-2">
+              <div className="relative w-full aspect-[16/10] min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] xl:min-h-[480px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
                   src={siteConfig.hero.image || "/images/hero-portrait.png"}
                   alt="Featured Showcase"

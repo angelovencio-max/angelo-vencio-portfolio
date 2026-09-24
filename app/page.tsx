@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* ==================================================
           SECTION 01 — HERO (#hero)
       ================================================== */}
-      <section id="hero" className="relative pt-28 pb-20 md:pt-36 md:pb-28 bg-[#FFFFFF] overflow-hidden border-b border-gray-100">
+      <section id="hero" className="relative pt-24 pb-16 md:pt-36 md:pb-28 bg-[#FFFFFF] overflow-hidden border-b border-gray-100">
         
         {/* Soft Light Cyan Polygon Backdrop Behind Photo */}
         <div 
@@ -64,8 +64,8 @@ export default function HomePage() {
               {/* 2-Liner Hook */}
               <div className="space-y-4">
                 <h1 className="font-sans text-3xl sm:text-4xl md:text-5xl lg:text-[2.8rem] xl:text-[3.5rem] font-black text-[#071A2B] tracking-tight leading-[1.08]">
-                  <span className="block whitespace-nowrap">{siteConfig.hero.hookHeadline}</span>
-                  <span className="text-[#08C4D4] block whitespace-nowrap">{siteConfig.hero.hookHeadlineAccent || "But Not More Sales?"}</span>
+                  <span className="block sm:whitespace-nowrap">{siteConfig.hero.hookHeadline}</span>
+                  <span className="text-[#08C4D4] block sm:whitespace-nowrap">{siteConfig.hero.hookHeadlineAccent || "But Not More Sales?"}</span>
                 </h1>
 
                 <p className="text-base sm:text-lg text-gray-600 font-sans max-w-xl leading-relaxed font-medium">
@@ -90,17 +90,17 @@ export default function HomePage() {
               </div>
 
               {/* Hero Action Buttons */}
-              <div className="flex flex-wrap items-center gap-4 pt-1">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto pt-1">
                 <button
                   onClick={() => setConsultationModalOpen(true)}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm text-center"
                 >
                   <span>{siteConfig.hero.primaryCta}</span>
                 </button>
 
                 <button
                   onClick={() => scrollToAnchor('challenge')}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gray-100 text-[#071A2B] font-sans text-xs font-bold hover:bg-gray-200 transition-all border border-gray-200"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gray-100 text-[#071A2B] font-sans text-xs font-bold hover:bg-gray-200 transition-all border border-gray-200 text-center"
                 >
                   <span>{siteConfig.hero.secondaryCta}</span>
                 </button>
@@ -108,9 +108,9 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: Expanded Cinema Widescreen Media Container (7 cols) */}
+            {/* Right Column: Cinema Widescreen Media Container (7 cols) */}
             <div className="lg:col-span-7 flex justify-center lg:justify-end w-full">
-              <div className="relative w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] xl:min-h-[540px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+              <div className="relative w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] rounded-2xl sm:rounded-3xl bg-[#071A2B] overflow-hidden border-2 sm:border-4 border-white shadow-xl sm:shadow-2xl group">
                 <img
                   src={siteConfig.hero.image || "/images/hero-portrait.png"}
                   alt="Featured Showcase"
@@ -125,58 +125,57 @@ export default function HomePage() {
 
       {/* ==================================================
           SECTION 02 — PAIN / CHALLENGE (#challenge)
-          Story Flow: PAIN → SOLUTION → PROOF → PROCESS → CTA
       ================================================== */}
-      <section id="challenge" className="py-24 bg-[#F7F9FA] border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <section id="challenge" className="py-16 sm:py-24 bg-[#F7F9FA] border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+          <div className="text-center max-w-3xl mx-auto space-y-3 sm:space-y-4">
+            <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
               The Challenge
             </div>
-            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black text-[#071A2B] tracking-tight uppercase leading-tight">
+            <h2 className="font-sans text-2xl sm:text-4xl md:text-5xl font-black text-[#071A2B] tracking-tight uppercase leading-tight">
               Spending on ads but still can’t find a winning creative?
             </h2>
-            <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto">
+            <p className="text-sm sm:text-base text-gray-500 font-sans max-w-xl mx-auto leading-relaxed">
               Most DTC brands don&apos;t fail because of their product — they get stuck in an endless loop of unorganized creative testing.
             </p>
           </div>
 
           {/* 3 Core Pain Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
             
-            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-xs space-y-4 hover:border-[#08C4D4] transition-all">
-              <div className="w-12 h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center font-bold">
-                <TrendingDown className="w-6 h-6" />
+            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-200 shadow-xs space-y-3 sm:space-y-4 hover:border-[#08C4D4] transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-red-50 text-red-500 flex items-center justify-center font-bold">
+                <TrendingDown className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-sans text-xl font-black text-[#071A2B] leading-snug">
+              <h3 className="font-sans text-lg sm:text-xl font-black text-[#071A2B] leading-snug">
                 Wasted Ad Spend
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed font-sans font-medium">
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-sans font-medium">
                 Too much budget goes into ads that don’t convert.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-xs space-y-4 hover:border-[#08C4D4] transition-all">
-              <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center font-bold">
-                <HelpCircle className="w-6 h-6" />
+            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-200 shadow-xs space-y-3 sm:space-y-4 hover:border-[#08C4D4] transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center font-bold">
+                <HelpCircle className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-sans text-xl font-black text-[#071A2B] leading-snug">
+              <h3 className="font-sans text-lg sm:text-xl font-black text-[#071A2B] leading-snug">
                 Unfocused Production
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed font-sans font-medium">
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-sans font-medium">
                 Too many creatives are made without knowing what to test.
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 border border-gray-200 shadow-xs space-y-4 hover:border-[#08C4D4] transition-all">
-              <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#08C4D4] flex items-center justify-center font-bold">
-                <AlertCircle className="w-6 h-6" />
+            <div className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-200 shadow-xs space-y-3 sm:space-y-4 hover:border-[#08C4D4] transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-blue-50 text-[#08C4D4] flex items-center justify-center font-bold">
+                <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
-              <h3 className="font-sans text-xl font-black text-[#071A2B] leading-snug">
+              <h3 className="font-sans text-lg sm:text-xl font-black text-[#071A2B] leading-snug">
                 No Scaling System
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed font-sans font-medium">
+              <p className="text-xs sm:text-sm text-gray-600 leading-relaxed font-sans font-medium">
                 And there’s no clear system for finding the next winner.
               </p>
             </div>
@@ -184,20 +183,20 @@ export default function HomePage() {
           </div>
 
           {/* Solution Transition Banner */}
-          <div className="bg-[#071A2B] text-white rounded-3xl p-8 sm:p-10 border border-[#08C4D4]/30 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="bg-[#071A2B] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-[#08C4D4]/30 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div className="space-y-2">
               <div className="font-mono text-xs sm:text-sm font-bold text-[#08C4D4] uppercase tracking-widest flex items-center gap-2">
-                <Repeat className="w-4 h-4" />
+                <Repeat className="w-4 h-4 shrink-0" />
                 <span>THE SYSTEM SOLUTION</span>
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-black text-white leading-snug max-w-2xl font-sans">
+              <h3 className="text-lg sm:text-2xl md:text-3xl font-black text-white leading-snug max-w-2xl font-sans">
                 I help build creative systems that help brands launch, test, and iterate faster.
               </h3>
             </div>
 
             <button
               onClick={() => scrollToAnchor('capabilities')}
-              className="px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shrink-0 shadow-md"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shrink-0 shadow-md text-center"
             >
               See How The System Works →
             </button>
@@ -208,17 +207,16 @@ export default function HomePage() {
 
       {/* ==================================================
           SECTION 03 — SOLUTION / CAPABILITIES (#capabilities)
-          Story Flow: PAIN → SOLUTION → PROOF → PROCESS → CTA
       ================================================== */}
-      <section id="capabilities" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-100">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <section id="capabilities" className="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Left Column */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+          <div className="lg:col-span-5 space-y-5 sm:space-y-6">
+            <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
               THE SOLUTION
             </div>
-            <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase leading-tight">
+            <h2 className="font-sans text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase leading-tight">
               {siteConfig.howIHelp.headline}
             </h2>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-sans">
@@ -226,14 +224,14 @@ export default function HomePage() {
             </p>
             <button
               onClick={() => navigate('/works')}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm w-full sm:w-auto"
             >
               <span>View All Production Works →</span>
             </button>
           </div>
 
           {/* Right Capabilities Grid */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div className="bg-white border border-gray-100 rounded-2xl p-5 space-y-3 shadow-xs hover:border-[#08C4D4]/50 transition-colors">
               <Lightbulb className="w-6 h-6 text-[#08C4D4]" />
               <h3 className="font-sans text-base font-bold text-[#071A2B]">AI Creative Systems</h3>
@@ -287,49 +285,145 @@ export default function HomePage() {
       </section>
 
       {/* ==================================================
-          SECTION 04 — PROOF (#case-studies & #testimonials)
-          Story Flow: PAIN → SOLUTION → PROOF → PROCESS → CTA
+          SECTION 04 — PROCESS & RESULTS (#process)
+          [MOVED HERE AFTER THE SOLUTION / CAPABILITIES SECTION]
       ================================================== */}
-      <section id="case-studies" className="py-24 bg-[#F7F9FA] border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      <section id="process" className="py-16 sm:py-24 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+          
+          {/* Part A: Sustainable Growth Pillars */}
+          <div className="bg-[#071A2B] rounded-2xl sm:rounded-3xl p-6 sm:p-12 text-white border border-gray-800 shadow-xl space-y-6 sm:space-y-8">
+            <div className="border-b border-gray-800 pb-4 text-center md:text-left">
+              <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] uppercase tracking-widest mb-1">
+                THE PROCESS &amp; SYSTEM
+              </div>
+              <h2 className="font-sans text-xl sm:text-3xl md:text-4xl font-black text-white tracking-tight uppercase">
+                {siteConfig.advantageStrip.headline}
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
+                  <Target className="w-5 h-5 sm:w-6 sm:h-6" />
+                </div>
+                <div className="font-sans text-[10px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider leading-tight">
+                  EXPERIENCE ACROSS MULTIPLE INDUSTRIES
+                </div>
+              </div>
+
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
+                  <Cpu className="w-5 h-5 sm:w-6 sm:h-6" />
+                </div>
+                <div className="font-sans text-[10px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider leading-tight">
+                  AI-POWERED STRATEGIES &amp; AUTOMATION
+                </div>
+              </div>
+
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
+                  <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6" />
+                </div>
+                <div className="font-sans text-[10px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider leading-tight">
+                  PROVEN MARKETING &amp; SALES SYSTEMS
+                </div>
+              </div>
+
+              <div className="space-y-2 flex flex-col items-center">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
+                  <Zap className="w-5 h-5 sm:w-6 sm:h-6" />
+                </div>
+                <div className="font-sans text-[10px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider leading-tight">
+                  BUILT FOR LONG-TERM SCALE
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Part B: The Result Outcomes */}
+          <div className="space-y-8 sm:space-y-10">
+            <div className="text-center max-w-2xl mx-auto space-y-3">
+              <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+                {siteConfig.theResult.eyebrow}
+              </div>
+              <h2 className="font-sans text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
+                {siteConfig.theResult.headline}
+              </h2>
+              <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-sans">
+                {siteConfig.theResult.copy}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              {siteConfig.theResult.outcomes.map((item) => (
+                <div
+                  key={item.id}
+                  className="bg-[#F7F9FA] border border-gray-200 rounded-2xl p-5 sm:p-6 space-y-3 sm:space-y-4 hover:shadow-sm transition-all"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-[#E6F9FC] text-[#08C4D4] flex items-center justify-center font-bold">
+                    {item.icon === 'Clock' && <Clock className="w-5 h-5" />}
+                    {item.icon === 'TrendingUp' && <TrendingUp className="w-5 h-5" />}
+                    {item.icon === 'Users' && <Users className="w-5 h-5" />}
+                    {item.icon === 'Zap' && <Zap className="w-5 h-5" />}
+                  </div>
+                  <h3 className="font-sans text-base font-extrabold text-[#071A2B]">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-gray-500 leading-relaxed font-sans">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ==================================================
+          SECTION 05 — PROOF (#case-studies & #testimonials)
+      ================================================== */}
+      <section id="case-studies" className="py-16 sm:py-24 bg-[#F7F9FA] border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
           
           {/* Part 1: Worked With Brands & Clients */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8">
             <div className="text-center space-y-2">
-              <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+              <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
                 {siteConfig.brandsSection.eyebrow}
               </div>
-              <h3 className="font-sans text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#071A2B] tracking-tight uppercase">
+              <h3 className="font-sans text-xl sm:text-3xl md:text-4xl font-extrabold text-[#071A2B] tracking-tight uppercase">
                 {siteConfig.brandsSection.headline}
               </h3>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4">
               {siteConfig.brandLogos.map((brand, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-2xl border border-gray-200 p-5 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 hover:border-[#08C4D4] transition-all min-h-[150px]"
+                  className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 hover:border-[#08C4D4] transition-all min-h-[130px] sm:min-h-[150px]"
                 >
                   {brand.logo ? (
-                    <div className="h-12 w-full flex items-center justify-center shrink-0 mb-1">
+                    <div className="h-10 sm:h-12 w-full flex items-center justify-center shrink-0 mb-1">
                       <img
                         src={brand.logo}
                         alt={brand.name}
-                        className="max-h-12 max-w-[85%] object-contain"
+                        className="max-h-10 sm:max-h-12 max-w-[85%] object-contain"
                       />
                     </div>
                   ) : null}
                   <div className="font-mono text-xs sm:text-sm font-bold text-[#071A2B] uppercase tracking-wider leading-snug">
                     {brand.name}
                   </div>
-                  <div className="text-[10px] sm:text-xs text-gray-400 font-sans font-medium">
+                  <div className="text-[10px] sm:text-xs text-gray-400 font-sans font-medium line-clamp-2">
                     {brand.category}
                   </div>
                 </div>
               ))}
 
               {/* Additional Slot */}
-              <div className="bg-white rounded-2xl border border-dashed border-gray-300 p-5 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 min-h-[150px]">
+              <div className="bg-white rounded-2xl border border-dashed border-gray-300 p-4 sm:p-6 flex flex-col items-center justify-center text-center space-y-2 min-h-[130px] sm:min-h-[150px]">
                 <div className="font-mono text-xs sm:text-sm font-bold text-[#08C4D4] uppercase tracking-wider leading-snug">
                   YOUR BRAND HERE
                 </div>
@@ -347,13 +441,13 @@ export default function HomePage() {
           </div>
 
           {/* Part 2: Featured Case Studies */}
-          <div className="space-y-8 pt-8 border-t border-gray-200">
+          <div className="space-y-6 sm:space-y-8 pt-8 border-t border-gray-200">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-gray-200 pb-6">
               <div>
-                <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase mb-1">
+                <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase mb-1">
                   FEATURED CASE BREAKDOWNS
                 </div>
-                <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
+                <h2 className="font-sans text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
                   CASE STUDIES
                 </h2>
               </div>
@@ -366,7 +460,7 @@ export default function HomePage() {
               </button>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {caseStudies.map((cs) => (
                 <div
                   key={cs.id}
@@ -388,12 +482,12 @@ export default function HomePage() {
                       )}
                     </div>
 
-                    <div className="p-5 space-y-3">
+                    <div className="p-4 sm:p-5 space-y-2.5 sm:space-y-3">
                       <div className="font-mono text-[10px] font-bold text-[#08C4D4] tracking-wider uppercase">
                         {cs.category}
                       </div>
 
-                      <h3 className="font-sans text-lg font-extrabold text-[#071A2B] group-hover:text-[#08C4D4] transition-colors tracking-tight">
+                      <h3 className="font-sans text-base sm:text-lg font-extrabold text-[#071A2B] group-hover:text-[#08C4D4] transition-colors tracking-tight">
                         {cs.title}
                       </h3>
 
@@ -403,7 +497,7 @@ export default function HomePage() {
                     </div>
                   </div>
 
-                  <div className="px-5 pb-5 pt-2">
+                  <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-2">
                     <button
                       onClick={() => setSelectedCaseStudy(cs)}
                       className="inline-flex items-center gap-1.5 font-sans text-xs font-bold text-[#08C4D4] hover:text-[#00AEBE] transition-colors"
@@ -417,24 +511,24 @@ export default function HomePage() {
           </div>
 
           {/* Part 3: Testimonials */}
-          <div id="testimonials" className="space-y-8 pt-8 border-t border-gray-200">
-            <div className="text-center max-w-2xl mx-auto space-y-3">
-              <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+          <div id="testimonials" className="space-y-6 sm:space-y-8 pt-8 border-t border-gray-200">
+            <div className="text-center max-w-2xl mx-auto space-y-2 sm:space-y-3">
+              <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
                 CLIENT REVIEWS &amp; ENDORSEMENTS
               </div>
-              <h3 className="font-sans text-3xl sm:text-4xl md:text-5xl font-black text-[#071A2B] tracking-tight uppercase">
+              <h3 className="font-sans text-2xl sm:text-4xl md:text-5xl font-black text-[#071A2B] tracking-tight uppercase">
                 WHAT FOUNDERS &amp; OPERATORS SAY
               </h3>
-              <p className="text-sm sm:text-base text-gray-500 leading-relaxed">
+              <p className="text-xs sm:text-base text-gray-500 leading-relaxed">
                 Feedback from brands, agencies, and business partners who rely on Angelo for creative strategy and growth execution.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
               {testimonials.map((t) => (
                 <div
                   key={t.id}
-                  className="bg-white rounded-2xl p-8 border border-gray-200 hover:border-[#08C4D4] transition-all shadow-xs flex flex-col justify-between space-y-6 relative"
+                  className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 hover:border-[#08C4D4] transition-all shadow-xs flex flex-col justify-between space-y-6 relative"
                 >
                   <div className="space-y-4">
                     <div className="flex items-center justify-between gap-4">
@@ -450,7 +544,7 @@ export default function HomePage() {
 
                     <div className="relative">
                       <Quote className="w-8 h-8 text-gray-200 absolute -top-3 -left-2 pointer-events-none" />
-                      <p className="text-sm sm:text-base text-[#071A2B] font-sans leading-relaxed relative z-10 pl-4 font-medium">
+                      <p className="text-xs sm:text-base text-[#071A2B] font-sans leading-relaxed relative z-10 pl-4 font-medium">
                         {t.quote}
                       </p>
                     </div>
@@ -484,111 +578,14 @@ export default function HomePage() {
       </section>
 
       {/* ==================================================
-          SECTION 05 — PROCESS & RESULTS (#process)
-          Story Flow: PAIN → SOLUTION → PROOF → PROCESS → CTA
-      ================================================== */}
-      <section id="process" className="py-24 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-          
-          {/* Part A: Sustainable Growth Pillars */}
-          <div className="bg-[#071A2B] rounded-3xl p-8 sm:p-12 text-white border border-gray-800 shadow-xl space-y-8">
-            <div className="border-b border-gray-800 pb-4 text-center md:text-left">
-              <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] uppercase tracking-widest mb-1">
-                THE PROCESS &amp; SYSTEM
-              </div>
-              <h2 className="font-sans text-2xl sm:text-3xl md:text-4xl font-black text-white tracking-tight uppercase">
-                {siteConfig.advantageStrip.headline}
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
-                  <Target className="w-6 h-6" />
-                </div>
-                <div className="font-sans text-[11px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider">
-                  EXPERIENCE ACROSS MULTIPLE INDUSTRIES
-                </div>
-              </div>
-
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
-                  <Cpu className="w-6 h-6" />
-                </div>
-                <div className="font-sans text-[11px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider">
-                  AI-POWERED STRATEGIES &amp; AUTOMATION
-                </div>
-              </div>
-
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
-                  <TrendingUp className="w-6 h-6" />
-                </div>
-                <div className="font-sans text-[11px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider">
-                  PROVEN MARKETING &amp; SALES SYSTEMS
-                </div>
-              </div>
-
-              <div className="space-y-2 flex flex-col items-center">
-                <div className="w-12 h-12 rounded-full border border-gray-700 flex items-center justify-center text-[#08C4D4]">
-                  <Zap className="w-6 h-6" />
-                </div>
-                <div className="font-sans text-[11px] sm:text-xs font-bold text-gray-200 uppercase tracking-wider">
-                  BUILT FOR LONG-TERM SCALE
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Part B: The Result Outcomes */}
-          <div className="space-y-10">
-            <div className="text-center max-w-2xl mx-auto space-y-3">
-              <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
-                {siteConfig.theResult.eyebrow}
-              </div>
-              <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
-                {siteConfig.theResult.headline}
-              </h2>
-              <p className="text-sm sm:text-base text-gray-500 leading-relaxed font-sans">
-                {siteConfig.theResult.copy}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {siteConfig.theResult.outcomes.map((item) => (
-                <div
-                  key={item.id}
-                  className="bg-[#F7F9FA] border border-gray-200 rounded-2xl p-6 space-y-4 hover:shadow-sm transition-all"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-[#E6F9FC] text-[#08C4D4] flex items-center justify-center font-bold">
-                    {item.icon === 'Clock' && <Clock className="w-5 h-5" />}
-                    {item.icon === 'TrendingUp' && <TrendingUp className="w-5 h-5" />}
-                    {item.icon === 'Users' && <Users className="w-5 h-5" />}
-                    {item.icon === 'Zap' && <Zap className="w-5 h-5" />}
-                  </div>
-                  <h3 className="font-sans text-base font-extrabold text-[#071A2B]">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-gray-500 leading-relaxed font-sans">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      {/* ==================================================
           SECTION 06 — ABOUT ANGELO VENCIO (#about)
       ================================================== */}
-      <section id="about" className="py-24 bg-[#F7F9FA] border-b border-gray-100">
+      <section id="about" className="py-16 sm:py-24 bg-[#F7F9FA] border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-5 flex justify-center">
-              <div className="relative w-full max-w-[380px] sm:max-w-[420px] aspect-[4/5] rounded-3xl bg-gray-100 overflow-hidden border-4 border-white shadow-lg">
+              <div className="relative w-full max-w-[320px] sm:max-w-[420px] aspect-[4/5] rounded-2xl sm:rounded-3xl bg-gray-100 overflow-hidden border-4 border-white shadow-lg">
                 <img
                   src={aboutContent.image}
                   alt="Angelo Vencio"
@@ -597,14 +594,14 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="lg:col-span-7 space-y-6">
-              <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+            <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-left">
+              <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
                 STRATEGIC OPERATOR
               </div>
-              <h2 className="font-sans text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
+              <h2 className="font-sans text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#071A2B] tracking-tight uppercase">
                 ABOUT ANGELO VENCIO
               </h2>
-              <div className="space-y-4 text-sm sm:text-base text-gray-600 leading-relaxed font-sans">
+              <div className="space-y-3 sm:space-y-4 text-xs sm:text-base text-gray-600 leading-relaxed font-sans">
                 <p>
                   Angelo Vencio helps growth-minded eCommerce brands and digital businesses build modern, AI-enhanced creative systems.
                 </p>
@@ -619,7 +616,7 @@ export default function HomePage() {
               <div className="pt-2 flex flex-wrap gap-4">
                 <button
                   onClick={() => setConsultationModalOpen(true)}
-                  className="px-6 py-3 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm"
+                  className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm text-center"
                 >
                   Work With Angelo →
                 </button>
@@ -632,27 +629,26 @@ export default function HomePage() {
 
       {/* ==================================================
           SECTION 07 — CTA (#contact)
-          Story Flow: PAIN → SOLUTION → PROOF → PROCESS → CTA
       ================================================== */}
-      <section id="contact" className="py-24 bg-[#071A2B] text-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+      <section id="contact" className="py-16 sm:py-24 bg-[#071A2B] text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 sm:space-y-8">
           
-          <div className="font-mono text-sm sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
+          <div className="font-mono text-xs sm:text-base font-bold text-[#08C4D4] tracking-widest uppercase">
             BUILD YOUR CREATIVE SYSTEM
           </div>
 
-          <h2 className="font-sans text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight uppercase leading-tight">
+          <h2 className="font-sans text-2xl sm:text-5xl md:text-6xl font-black text-white tracking-tight uppercase leading-tight">
             READY TO LAUNCH, TEST, AND FIND WINNING ADS FASTER?
           </h2>
 
-          <p className="text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-sans">
+          <p className="text-xs sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed font-sans">
             Schedule a strategic consultation with Angelo Vencio to identify bottlenecks in your creative production and build a high-velocity ad testing framework.
           </p>
 
-          <div className="pt-4 flex flex-wrap justify-center gap-4">
+          <div className="pt-2 sm:pt-4 flex flex-col sm:flex-row justify-center gap-4">
             <button
               onClick={() => setConsultationModalOpen(true)}
-              className="px-8 py-4 rounded-full bg-[#08C4D4] text-white font-sans text-xs sm:text-sm font-bold hover:bg-[#00AEBE] transition-all shadow-lg"
+              className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#08C4D4] text-white font-sans text-xs sm:text-sm font-bold hover:bg-[#00AEBE] transition-all shadow-lg text-center"
             >
               Book a Consultation →
             </button>

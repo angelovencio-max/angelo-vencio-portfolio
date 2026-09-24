@@ -116,12 +116,12 @@ export const Navbar: React.FC = () => {
                   window.scrollTo({ top: 0, behavior: 'smooth' });
                 }
               }}
-              className="flex items-center gap-3 group"
+              className="flex items-center gap-2 sm:gap-3 group"
             >
-              <div className="w-8 h-8 rounded-lg bg-[#E6F9FC] text-[#08C4D4] border border-[#08C4D4]/40 flex items-center justify-center font-mono text-sm font-black group-hover:bg-[#08C4D4] group-hover:text-white transition-all shadow-xs">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#E6F9FC] text-[#08C4D4] border border-[#08C4D4]/40 flex items-center justify-center font-mono text-xs sm:text-sm font-black group-hover:bg-[#08C4D4] group-hover:text-white transition-all shadow-xs shrink-0">
                 AV
               </div>
-              <span className="font-sans text-base font-extrabold tracking-tight text-[#071A2B] uppercase group-hover:text-[#08C4D4] transition-colors duration-100">
+              <span className="font-sans text-xs sm:text-base font-extrabold tracking-tight text-[#071A2B] uppercase group-hover:text-[#08C4D4] transition-colors duration-100 whitespace-nowrap">
                 ANGELO VENCIO
               </span>
             </Link>

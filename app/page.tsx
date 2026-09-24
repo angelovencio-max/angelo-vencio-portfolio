@@ -47,7 +47,7 @@ export default function HomePage() {
       {/* ==================================================
           SECTION 01 — HERO (#hero)
       ================================================== */}
-      <section id="hero" className="relative pt-24 pb-16 md:pt-28 md:pb-24 bg-[#FFFFFF] overflow-hidden border-b border-gray-100">
+      <section id="hero" className="relative pt-28 pb-20 md:pt-36 md:pb-28 bg-[#FFFFFF] overflow-hidden border-b border-gray-100">
         
         {/* Soft Light Cyan Polygon Backdrop Behind Photo */}
         <div 
@@ -56,10 +56,10 @@ export default function HomePage() {
         />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            {/* Left Column (6 cols) */}
-            <div className="lg:col-span-6 space-y-6">
+            {/* Left Column (5 cols) */}
+            <div className="lg:col-span-5 space-y-6">
               
               {/* 2-Liner Hook */}
               <div className="space-y-4">
@@ -93,14 +93,14 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-4 pt-1">
                 <button
                   onClick={() => setConsultationModalOpen(true)}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-[#08C4D4] text-white font-sans text-xs font-bold hover:bg-[#00AEBE] transition-all shadow-sm"
                 >
                   <span>{siteConfig.hero.primaryCta}</span>
                 </button>
 
                 <button
                   onClick={() => scrollToAnchor('challenge')}
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-100 text-[#071A2B] font-sans text-xs font-bold hover:bg-gray-200 transition-all border border-gray-200"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-gray-100 text-[#071A2B] font-sans text-xs font-bold hover:bg-gray-200 transition-all border border-gray-200"
                 >
                   <span>{siteConfig.hero.secondaryCta}</span>
                 </button>
@@ -108,9 +108,9 @@ export default function HomePage() {
 
             </div>
 
-            {/* Right Column: True Widescreen Landscape Media Container (6 cols) */}
-            <div className="lg:col-span-6 flex justify-center lg:justify-end w-full">
-              <div className="relative w-full aspect-video sm:aspect-[16/10] lg:aspect-[16/9] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
+            {/* Right Column: Expanded Large Widescreen Media Container (7 cols) */}
+            <div className="lg:col-span-7 flex justify-center lg:justify-end w-full">
+              <div className="relative w-full aspect-[16/10] min-h-[320px] sm:min-h-[420px] lg:min-h-[480px] xl:min-h-[520px] rounded-3xl bg-[#071A2B] overflow-hidden border-4 border-white shadow-2xl group">
                 <img
                   src={siteConfig.hero.image || "/images/hero-portrait.png"}
                   alt="Featured Showcase"
